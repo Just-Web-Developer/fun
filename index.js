@@ -8,9 +8,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/targets', function(req, res) {
-    res.send(JSON.stringify([
-        ['fsb.ru']
-    ]))
+    res.send(JSON.stringify(
+        {
+            targets:['fsb.ru']
+        }
+    ))
 })
 
 app.use(express.static(__dirname + '/static'));
