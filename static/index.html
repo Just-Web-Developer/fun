@@ -28,7 +28,7 @@
         }
     }
     function startFun(){
-        let targets = localStorage.targets
+        let targets = localStorage.targets.split(',')
         console.log(targets)
         let currentTarget = 0
         let all, handled, success, fail = 0
