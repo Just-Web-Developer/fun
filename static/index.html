@@ -33,6 +33,8 @@
         let currentTarget = 0
         let all, handled, success, fail = 0
         while (true) {
+            console.log('Success: ' + success)
+            console.log('Fail: ' + fail)
             console.log(success / fail)
             fetch(targets[currentTarget]).then((response)=>{
                 response.ok ? success=success++ : fail = fail++ 
