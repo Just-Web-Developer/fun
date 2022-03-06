@@ -20,7 +20,7 @@
             const response = await fetch(window.location.origin + '/targets', {
                 method: 'GET'
             });
-            const json = await response.json();
+            const json = await response;
             console.log(json)
             localStorage.setItem('targets', json.targets)
         } catch (error) {
@@ -28,7 +28,7 @@
         }
     }
     function startFun(){
-        let targets = localStorage.targets
+        let targets = localStorage.targets.json()
         let currentTarget = 0
         let all, handled, success, fail = 0
         while (true) {
