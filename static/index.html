@@ -28,7 +28,8 @@
         }
     }
     function startFun(){
-        let targets = localStorage.targets.json()
+        let targets = localStorage.targets
+        console.log(targets)
         let currentTarget = 0
         let all, handled, success, fail = 0
         while (true) {
