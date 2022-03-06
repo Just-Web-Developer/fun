@@ -15,6 +15,7 @@
 </body>
 <script>
     async function getTargets(){
+
         try {
             const response = await fetch(window.location.origin + '/targets', {
                 method: 'GET'
@@ -40,6 +41,7 @@
             }
         }
     }
+    window.addEventListener('load', getTargets)
 </script>
 </html>
 
