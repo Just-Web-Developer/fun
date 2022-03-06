@@ -37,7 +37,7 @@
             console.log('Fail: ' + fail)
             console.log(success / fail)
             fetch(targets[currentTarget]).then((response)=>{
-                response.ok ? success=success++ : fail = fail++ 
+                response.ok ? success+=1 : fail+=1 
                 handled = handled++
             })
 
