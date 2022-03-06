@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
+    console.log('fgdgdf')
     res.sendFile( __dirname + '/static/index.html');
 })
 
