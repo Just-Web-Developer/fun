@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 app.get('/targets', function(req, res) {
     res.send(JSON.stringify(
         {
-            targets:['http://fsb.ru', 'https://ria.ru/']
+            targets:['http://fsb.ru', 'http://ria.ru/']
         }
     ))
 })
